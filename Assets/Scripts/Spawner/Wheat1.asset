@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dd614c650902914da0f7ccff285b82e, type: 3}
+  m_Name: Wheat1
+  m_EditorClassIdentifier: 
+  _cropPrefab: {fileID: 3108880224448841785, guid: bb38d945db2b23341a2e5b01071b24a5,
+    type: 3}
