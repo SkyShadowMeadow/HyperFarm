@@ -28,17 +28,21 @@ namespace UI
             _wheatStack.OnWheatBlockSold += DecreaseBar;
         }
 
+        private void OnDisable()
+        {
+            _barn.OnWheatSold -= IncreaseCoins;
+            _wheatStack.OnWheatBlockTaken -= IncreaseBar;
+            _wheatStack.OnWheatBlockSold -= DecreaseBar;
+        }
+
         private void DecreaseBar()
             => _uiView.UpdateBarValue( -_barStep);
 
         private void IncreaseBar()
-        {
-            _uiView.UpdateBarValue(_barStep);
-        }
+            => _uiView.UpdateBarValue(_barStep);
 
         private void IncreaseCoins(int coinsNumber)
-        {
-            _uiView.AddCoins(coinsNumber);
-        }
+            => _uiView.AddCoins(coinsNumber);
+        
     }
 }
